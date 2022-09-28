@@ -55,7 +55,8 @@ class D121201024ProfileBodyScreen extends StatelessWidget {
                         builder: (ctx) => const D121201024ProfileDetail()));
               },
               child: const CircleAvatar(
-                backgroundImage: AssetImage('assets/D121201024.jpg'),
+                backgroundImage:
+                    AssetImage('assets/D121201024_NabilahAzZahra.jpg'),
                 radius: 50.0,
               ),
             ),
