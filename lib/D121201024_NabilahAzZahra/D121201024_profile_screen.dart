@@ -23,7 +23,7 @@ class D121201024ProfileScreen extends StatelessWidget {
   }
 }
 
-class D121201024ProfileBodyScreen extends StatelessWidget{
+class D121201024ProfileBodyScreen extends StatelessWidget {
   const D121201024ProfileBodyScreen({Key? key}) : super(key: key);
 
   @override
@@ -51,7 +51,8 @@ class D121201024ProfileBodyScreen extends StatelessWidget{
               onTap: () {
                 Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (ctx) => const D121201024ProfileDetail()));
+                    MaterialPageRoute(
+                        builder: (ctx) => const D121201024ProfileDetail()));
               },
               child: const CircleAvatar(
                 backgroundImage: AssetImage('assets/myimage.jpg'),
@@ -119,7 +120,7 @@ class D121201024ProfileBodyScreen extends StatelessWidget{
   }
 }
 
-class D121201024ProfileDetail extends StatelessWidget{
+class D121201024ProfileDetail extends StatelessWidget {
   const D121201024ProfileDetail({Key? key}) : super(key: key);
 
   @override
@@ -138,7 +139,7 @@ class D121201024ProfileDetail extends StatelessWidget{
   }
 }
 
-class D121201024ProfileBodyDetail extends StatelessWidget{
+class D121201024ProfileBodyDetail extends StatelessWidget {
   const D121201024ProfileBodyDetail({Key? key}) : super(key: key);
 
   @override
@@ -156,7 +157,7 @@ class D121201024ProfileBodyDetail extends StatelessWidget{
                   height: 100,
                   decoration: const BoxDecoration(
                     image: DecorationImage(
-                        image: AssetImage('assets/myimage.jpg')),
+                        image: AssetImage('assets/D121201024_Nabilah.jpg')),
                   ),
                 ),
                 Column(
@@ -200,7 +201,7 @@ class D121201024ProfileBodyDetail extends StatelessWidget{
             const SizedBox(
               child: Text(
                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.'
-                    ' Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                ' Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
                 textAlign: TextAlign.justify,
               ),
             ),

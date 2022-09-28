@@ -31,7 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,26 +39,27 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
           child: Column(
-            children: const [
-              NavigateButton(name: 'Nim-Name', page: NimProfileScreen()),
-              NavigateButton(name: 'D121201024-Nabilah Az Zahra', page: D121201024ProfileScreen())
-            ],
-          )),
+        children: const [
+          NavigateButton(name: 'Nim-Name', page: NimProfileScreen()),
+          NavigateButton(
+              name: 'D121201024-Nabilah Az Zahra',
+              page: D121201024ProfileScreen())
+        ],
+      )),
     );
   }
 }
 
 class NavigateButton extends StatelessWidget {
-
-  const NavigateButton({Key? key, required this.name, required  this.page}) : super(key: key);
+  const NavigateButton({Key? key, required this.name, required this.page})
+      : super(key: key);
 
   final Widget page;
   final String name;
 
-
   @override
   Widget build(BuildContext context) {
-    return ElevatedButton (
+    return ElevatedButton(
       child: Text(name),
       onPressed: () {
         Navigator.push(context, MaterialPageRoute(builder: (ctx) => page));
@@ -67,4 +67,3 @@ class NavigateButton extends StatelessWidget {
     );
   }
 }
-
