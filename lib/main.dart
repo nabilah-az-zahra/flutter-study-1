@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tif_flutter/nim_rahmat/nim_profile_screen.dart';
+import 'package:tif_flutter/D121201024_NabilahAzZahra/D121201024_profile_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -39,10 +40,11 @@ class _MyHomePageState extends State<MyHomePage> {
       ),
       body: Center(
           child: Column(
-        children: const [
-          NavigateButton(name: 'Nim-Name', page: NimProfileScreen())
-        ],
-      )),
+            children: const [
+              NavigateButton(name: 'Nim-Name', page: NimProfileScreen()),
+              NavigateButton(name: 'D121201024-Nabilah Az Zahra', page: D121201024ProfileScreen())
+            ],
+          )),
     );
   }
 }
